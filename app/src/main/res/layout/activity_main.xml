@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dragon_background"
+    tools:context="com.example.rick.mymediaplayer.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        >
+
+        <ToggleButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textOn="Stop"
+            android:textOff="Play"
+            android:text="ToggleButton" />
+
+        <ImageButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Button" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Button" />
+
+        <SeekBar
+            android:id="@+id/skbMusicBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnPlayPause"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txvAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textColor="@color/fontColor" />
+
+        <TextView
+            android:id="@+id/txvSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txvArtist"
+            android:layout_alignLeft="@+id/txvAlbum"
+            android:layout_alignStart="@+id/txvAlbum"
+            android:textColor="@color/fontColor"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txvArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/skbMusicBar"
+            android:layout_alignLeft="@+id/txvSong"
+            android:layout_alignStart="@+id/txvSong"
+            android:textColor="@color/fontColor"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
