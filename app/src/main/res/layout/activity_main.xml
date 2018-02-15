@@ -10,8 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        >
+        android:layout_margin="5dp">
 
         <ToggleButton
             android:id="@+id/btnPlayPause"
@@ -19,34 +18,37 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:textOn="Stop"
-            android:textOff="Play"
-            android:text="ToggleButton" />
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/toggle_selector" />
 
-        <ImageButton
+        <Button
             android:id="@+id/btnPrevious"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="Button" />
+            android:background="@android:drawable/ic_media_previous"/>
 
-        <ImageButton
+        <Button
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:text="Button" />
+            android:layout_below="@+id/skbMusicBar"
+            android:background="@android:drawable/ic_media_next" />
 
         <SeekBar
             android:id="@+id/skbMusicBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/btnPlayPause"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:progressTint="@color/colorPrimary"
+            android:thumbTint="@color/colorPrimary" />
 
         <TextView
             android:id="@+id/txvAlbum"
@@ -54,29 +56,38 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="TextView"
-            android:textColor="@color/fontColor" />
+            android:text="Rage Against The Machine"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txvSong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/txvArtist"
-            android:layout_alignLeft="@+id/txvAlbum"
-            android:layout_alignStart="@+id/txvAlbum"
+            android:layout_centerHorizontal="true"
+            android:text="Township Rebellion"
             android:textColor="@color/fontColor"
-            android:text="TextView" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txvArtist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/skbMusicBar"
-            android:layout_alignLeft="@+id/txvSong"
-            android:layout_alignStart="@+id/txvSong"
+            android:layout_centerHorizontal="true"
+            android:text="Rage Against The Machine"
             android:textColor="@color/fontColor"
-            android:text="TextView" />
+            android:textSize="18sp" />
 
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/rectangle"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
