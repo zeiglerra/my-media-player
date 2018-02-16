@@ -3,7 +3,6 @@ package com.example.rick.mymediaplayer;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.os.Build;
-import android.os.Handler;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -54,10 +53,10 @@ public class MainActivity extends AppCompatActivity {
         String strDurationTime = StringTimeCreate.getTimeUsingSeconds(duration);
         txvEndTime.setText(strDurationTime);
 
-        MediaControls mediaControls = new MediaControls(this);
-        btnPlayPause.setOnCheckedChangeListener(mediaControls);
-        btnPrevious.setOnClickListener(mediaControls);
-        btnNext.setOnClickListener(mediaControls);
+        MediaControlsHandler mediaControlsHandler = new MediaControlsHandler(this);
+        btnPlayPause.setOnCheckedChangeListener(mediaControlsHandler);
+        btnPrevious.setOnClickListener(mediaControlsHandler);
+        btnNext.setOnClickListener(mediaControlsHandler);
 
         MediaThread mediaThread = new MediaThread(this);
         MainActivity.this.runOnUiThread(mediaThread);

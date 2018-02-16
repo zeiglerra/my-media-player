@@ -15,7 +15,7 @@ import com.example.rick.mymediaplayer.utils.Time;
  * Created by Rick on 2/15/2018.
  */
 
-public final class MediaControls implements View.OnClickListener,
+public final class MediaControlsHandler implements View.OnClickListener,
         CompoundButton.OnCheckedChangeListener, SeekBar.OnSeekBarChangeListener {
 
     private MainActivity mainActivity;
@@ -24,7 +24,7 @@ public final class MediaControls implements View.OnClickListener,
     private Button btnPrevious;
     private Button btnNext;
 
-    public MediaControls(MainActivity mainActivity) {
+    public MediaControlsHandler(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
         this.mediaPlayer = mainActivity.getMediaPlayer();
         this.btnPlayPause = mainActivity.getBtnPlayPause();
