@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="Rage Against The Machine"
+            android:text="@string/default_album"
             android:textColor="@color/fontColor"
             android:textSize="18sp" />
 
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/txvArtist"
             android:layout_centerHorizontal="true"
-            android:text="Township Rebellion"
+            android:text="@string/default_song"
             android:textColor="@color/fontColor"
             android:textSize="18sp" />
 
@@ -76,9 +76,25 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/skbMusicBar"
             android:layout_centerHorizontal="true"
-            android:text="Rage Against The Machine"
+            android:text="@string/default_artist"
             android:textColor="@color/fontColor"
             android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txvCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/skbMusicBar"
+            android:textColor="@color/fontColor" />
+
+        <TextView
+            android:id="@+id/txvEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/skbMusicBar"
+            android:textColor="@color/fontColor" />
 
     </RelativeLayout>
 
