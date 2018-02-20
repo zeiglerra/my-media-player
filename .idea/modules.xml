@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/my-media-player.iml" filepath="$PROJECT_DIR$/.idea/my-media-player.iml" />
+      <module fileurl="file://C:\Users\Rick\AndroidStudioProjects\my-media-player\app\app.iml" filepath="C:\Users\Rick\AndroidStudioProjects\my-media-player\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-media-player.iml" filepath="$PROJECT_DIR$/my-media-player.iml" />
+      <module fileurl="file://C:\Users\Rick\AndroidStudioProjects\my-media-player\.idea\my-media-player.iml" filepath="C:\Users\Rick\AndroidStudioProjects\my-media-player\.idea\my-media-player.iml" />
     </modules>
   </component>
 </project>

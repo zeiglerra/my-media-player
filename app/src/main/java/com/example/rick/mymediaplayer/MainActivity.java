@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         btnPlayPause.setOnCheckedChangeListener(mediaControlsHandler);
         btnPrevious.setOnClickListener(mediaControlsHandler);
         btnNext.setOnClickListener(mediaControlsHandler);
+        skbMusicBar.setOnSeekBarChangeListener(mediaControlsHandler);
 
         MediaThread mediaThread = new MediaThread(this);
         MainActivity.this.runOnUiThread(mediaThread);
